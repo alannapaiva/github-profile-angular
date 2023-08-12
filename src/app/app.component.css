@@ -69,26 +69,33 @@ main {
   ul:hover{
     color:#fff;
   }
+
   @media only screen and (max-width: 600px){
     /*Big smartphones [426px -> 600px]*/
    ul{
     display: block;
-    justify-content: space-between;
-    gap: 10;
+    align-content: center;
    }
-
+  .app-user-data{
+    margin-bottom: 10px;
+   }
+   
    .bio{
     width: 25rem;
+    text-align: center;
    }
   }
   @media only screen and (max-width: 425px){
     /*Small smartphones [325px -> 425px]*/
     ul{
       display: block;
-      justify-content: space-between;
-      gap: 10;
+      align-content: center;
      }
      .bio{
       width: 20rem;
+      text-align: center;
+     }
+     .app-user-data{
+      margin-bottom: 10px;
      }
   }

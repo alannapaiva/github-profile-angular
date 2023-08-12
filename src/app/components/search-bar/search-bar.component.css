@@ -75,3 +75,23 @@ button:hover {
   background-color: #fff;
   box-shadow: 5px 5px 10px #171817;
 }
+@media only screen and (max-width: 600px){
+  /*Big smartphones [426px -> 600px]*/
+  .search-container{
+    width: 21rem;
+    align-content: center;
+  }
+  title{
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 425px){
+  /*Small smartphones [325px -> 425px]*/
+  .search-container{
+    width: 15rem;
+    align-content: center;
+  }
+  title{
+    text-align: center;
+  }
+}
