@@ -1,8 +1,8 @@
-*{
-  background-color: #FB8DBE;
+* {
+  background-color: #fb8dbe;
   text-decoration: none;
 }
-.app-search-bar{
+.app-search-bar {
   height: 100vh;
   width: 100%;
   display: flex;
@@ -11,91 +11,86 @@
   align-items: center;
 }
 main {
-  /* margin-top: 50px; */
   display: flex;
   flex-direction: column;
   align-items: center;
   font-family: "Open Sans", sans-serif;
 }
-  img {
-    width: 15rem;
-    border-radius: 50%;
-    display: grid;
-    margin-bottom: 10px;
-    cursor: pointer;
-    transition: .375s;
-    border: 2px solid #f92483;
-  }
-  
-  img:hover {
-      background-color: #fff;
-      box-shadow: 5px 5px 10px #171817;
-  }
-  
-  h2 {
-    font-weight: 700;
-    color: #f92483;
-    font-size: 2rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-  }
-  
-  .username {
-    font-weight: 500;
-    color: #fff;
-    font-size: 1.2rem;
-    cursor: pointer;
-    margin: 5px 0;
-    transition: all .375s;
-  }
-  
-  .username:hover {
-    color: #fff;
-  }
-  
-  .bio {
-    width: 42rem;
-    font-size: 1.4rem;
-    color:#fff;
-  }
-  
+img {
+  width: 15rem;
+  border-radius: 50%;
+  display: grid;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: 0.375s;
+  border: 2px solid #f92483;
+}
+
+img:hover {
+  background-color: #fff;
+  box-shadow: 5px 5px 10px #171817;
+}
+
+h2 {
+  font-weight: 700;
+  color: #f92483;
+  font-size: 2rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+}
+
+.username {
+  font-weight: 500;
+  color: #fff;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin: 5px 0;
+  transition: all 0.375s;
+}
+
+.username:hover {
+  color: #fff;
+}
+
+.bio {
+  width: 42rem;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+ul {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  align-self: center;
+  margin-bottom: 9rem;
+}
+ul:hover {
+  color: #fff;
+}
+
+@media only screen and (max-width: 600px) {
+  /*Big smartphones [426px -> 600px]*/
   ul {
     display: flex;
-    gap: 10px;
-    margin-top: 10px;
-    align-self: center;
-    margin-bottom: 9rem;
-  }
-  ul:hover{
-    color:#fff;
+    align-content: center;
+    flex-direction: column;
   }
 
-  @media only screen and (max-width: 600px){
-    /*Big smartphones [426px -> 600px]*/
-   ul{
-    display: block;
-    align-content: center;
-   }
-  .app-user-data{
-    margin-bottom: 10px;
-   }
-   
-   .bio{
+  .bio {
     width: 25rem;
     text-align: center;
-   }
   }
-  @media only screen and (max-width: 425px){
-    /*Small smartphones [325px -> 425px]*/
-    ul{
-      display: block;
-      align-content: center;
-     }
-     .bio{
-      width: 20rem;
-      text-align: center;
-     }
-     .app-user-data{
-      margin-bottom: 10px;
-     }
+}
+@media only screen and (max-width: 425px) {
+  /*Small smartphones [325px -> 425px]*/
+  ul {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
   }
+  .bio {
+    width: 20rem;
+    text-align: center;
+  }
+}
