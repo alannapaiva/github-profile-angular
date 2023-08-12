@@ -7,8 +7,7 @@ import { iUser } from './api.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'github-profile-angular';
-   user: iUser = {} as iUser;
+  user: iUser = {} as iUser;
 
   getUser(user: iUser) {
     this.user = user;

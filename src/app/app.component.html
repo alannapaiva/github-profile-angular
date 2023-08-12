@@ -1,3 +1,22 @@
-<main>
-    <app-search-bar></app-search-bar>  
+<div class="app-search-bar"> 
+    <app-search-bar (newItemEvent)="getUser($event)"></app-search-bar> 
+</div>
+     
+<main *ngIf="user?.name">
+  <a href={{user.html_url}} target="_blank">
+    <img src={{user.avatar_url}} alt={{user.name}}>
+  </a>
+  <h2>{{user.name}}</h2>
+  <a href={{user.html_url}} target="_blank">
+    <p class="username">@{{user.login}}</p>
+  </a>
+  <p class="bio">
+    {{user.bio}}
+  </p>
+
+  <ul id="data">
+    <app-user-data title="Repositories" [value]="user.public_repos" />
+    <app-user-data title="Followers" [value]="user.followers" />
+    <app-user-data title="Following" [value]="user.following" />
+  </ul>
 </main>

@@ -1,0 +1,26 @@
+li {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #f92483;
+  gap: 5px;
+  color: #FB8DBE;
+  cursor: pointer;
+  transition: all 0.375s;
+
+  .title {
+    font-size: 0.9rem;
+  }
+
+  .value {
+    color: var(--text-primary);
+  }
+}
+
+li:hover {
+  color: var(--text-primary);
+  box-shadow: 5px 5px 10px #171817;
+}
