@@ -46,9 +46,9 @@ input#search-bar {
 
 p {
   position: absolute;
-  bottom: -32px;
+  margin-top: 10px;
   font-size: 1.2rem;
-  color: #ff5040;
+  color: darkred;
   font-weight: 300;
 }
 
