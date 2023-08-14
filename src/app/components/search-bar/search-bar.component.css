@@ -46,8 +46,9 @@ input#search-bar {
 
 p {
   position: absolute;
-  margin-top: 10px;
-  font-size: 1.2rem;
+  margin-top: 15px;
+  margin-left: 2px;
+  font-size: 1rem;
   color: darkred;
   font-weight: 300;
 }
@@ -78,6 +79,7 @@ button:hover {
   /*Big smartphones [426px -> 600px]*/
   .search-container {
     width: 21rem;
+    margin-left: 18px;
     align-content: center;
   }
   title {
@@ -88,6 +90,7 @@ button:hover {
   /*Small smartphones [325px -> 425px]*/
   .search-container {
     width: 15rem;
+    margin-left: 18px;
     align-content: center;
   }
   title {
