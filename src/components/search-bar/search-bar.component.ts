@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
-import { ApiService, iUser } from 'src/app/api.service';
+import { iUser } from 'src/models/user.interface';
+import { ApiService } from 'src/services/api.service';
 
 @Component({
   selector: 'app-search-bar',
